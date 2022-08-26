@@ -1,2 +1,22 @@
-<h1>Posts#show</h1>
-<p>Find me in app/views/posts/show.html.erb</p>
+<div class="container">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-9">
+      <h1>ラーメンを詳しく！</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>shop</th>
+            <th>explain</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><%= @post.shop %></td>
+            <td><%= @post.explain %></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
