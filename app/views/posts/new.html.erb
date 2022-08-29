@@ -5,6 +5,8 @@
       <h1>New Post</h1>
 
       <%= form_with model: @post do |f| %>
+        <h4>image</h4>
+        <%= f.file_field :image %>
         <h4>shop</h4>
         <%= f.text_field :shop %>
         <h4>explain</h4>
