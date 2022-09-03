@@ -8,6 +8,7 @@
           <tr>
             <th>shop</th>
             <th>explain</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@
             <tr>
               <td><%= posts.shop %></td>
               <td><%= posts.explain %></td>
+              <td><%= link_to "show", post_path(posts.id) %></td>
             </tr>
           <% end %>
         </tbody>
