@@ -8,7 +8,9 @@
         <%= f.file_field :profile_image %>
         <h4>name</h4>
         <%= f.text_field :name %>
-        <%= submit 'User Update' %>
+        <h4>introduction</h4>
+        <%= f.text_area :introduction %>
+        <%= f.submit 'User Update' %>
       <% end %>
     </div>
   </div>

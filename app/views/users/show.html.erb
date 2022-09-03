@@ -6,13 +6,15 @@
         <thead>
           <tr>
             <th>name</th>
-            <th>image</th>
+            <th>introduction</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td><%= @user.name %></td>
-            <th></th>
+            <td><%= @user.introduction %></td>
+            <td><%= link_to "edit", edit_user_path(@user) %></td>
           </tr>
         </tbody>
       </table>
