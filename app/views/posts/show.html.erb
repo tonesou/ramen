@@ -10,6 +10,7 @@
             <th>explain</th>
             <th>image</th>
             <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -18,7 +19,7 @@
             <td><%= @post.explain %></td>
             <td><%= image_tag @post.get_image(100,100),class:"mt-3 rounded-circle" %></td>
             <td><%= link_to "edit", edit_post_path(@post) %></td>
-            
+            <td><%= link_to "destroy", post_path(@post), method: :delete %></td>
           </tr>
         </tbody>
       </table>
