@@ -6,12 +6,15 @@
         <thead>
           <tr>
             <th>name</th>
+            <th>image</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <% @users.each do |user| %>
             <tr>
               <td><%= user.name %></td>
+              <td><%= image_tag user.get_profile_image(100,100),class:"mt-3 rounded-circle" %></td>
               <td><%= link_to "show", user_path(user) %></td>
             </tr>
           <% end %>
