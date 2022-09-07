@@ -1,7 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-3"></div>
-    <div class="col-9">
+    <div class="col-4">
+      <h1>Mypost</h1>
+      <% @posts.each do |posts| %>
+        <%= image_tag posts.get_image(100,100),class:"mt-3 rounded-circle" %>
+        <%= posts.shop %>
+        <%= posts.explain %>
+      <% end %>
+    </div>
+    <div class="col-8">
       <table class="table">
         <thead>
           <tr>
