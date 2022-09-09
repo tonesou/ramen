@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @posts = @user
   end
 
   def edit
@@ -33,7 +34,7 @@ class PostsController < ApplicationController
       render "posts/edit"
     end
   end
-  
+
   def destroy
     @post = Post.find(params[:id])
     @post.destroy

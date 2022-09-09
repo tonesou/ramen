@@ -29,7 +29,7 @@
                 <%= link_to '投稿一覧', posts_path %><%= fa_icon("search") %>
               </li>
               <li class="nav-item">
-                <%= link_to 'ユーザ一覧', users_path %><%= fa_icon("image") %>
+                <%= link_to 'マイページ', user_path(current_user.id) %><%= fa_icon("image") %>
               </li>
               <li class="nav-item">
                 <%= link_to "ログアウト", destroy_user_session_path, method: :delete %><%= fa_icon("home") %>
