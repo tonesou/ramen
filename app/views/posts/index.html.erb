@@ -1,6 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-3"></div>
+    <div class="col-3">
+      <%= search_form_for @q do |f| %>
+        <%= f.label :name, "Keyword" %>
+        <%= f.search_field :name_cont %>
+
+        <%= f.submit "検索" %>
+      <% end %>
+    </div>
     <div class="col-9">
       <h1>みんなのラーメン</h1>
       <table class="table">
