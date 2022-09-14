@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.cover {
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-image: url(/assets/ramen-jiro-kabukicho_0024-610x349.jpg);
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: 100% 100%;
+}

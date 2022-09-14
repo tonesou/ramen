@@ -8,9 +8,9 @@
         <h4>image</h4>
         <%= f.file_field :image %>
         <h4>shop</h4>
-        <%= f.text_field :shop %>
+        <%= f.text_field :shop, rows: 5, class: "form-control" %>
         <h4>explain</h4>
-        <%= f.text_area :explain %>
+         <%=f.text_area :explain, rows: 5, class: "form-control" %>
         <h4>genre</h4>
         <%= f.select :genre, ['ラーメン', 'つけ麺', '油そば', 'その他'], {include_blank: '---'} %>
         <%= f.submit 'New Post' %>
