@@ -23,6 +23,16 @@
   background-size: 100% 100%;
 }
 
-.container {
+.back {
   background-image: image-url('ramen-jiro-kabukicho_0024-610x349.jpg');
+  height: 100%;
+  width: 100%;
+  display: table;
+  background-color:rgba(255,255,255,0.4);
+  background-blend-mode:lighten;
+  background-size: 100% 100%;
+  height: calc(100vh - 62px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
