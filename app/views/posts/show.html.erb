@@ -2,7 +2,9 @@
   <div class="container">
     <div class="row">
       <div class="col-3", style = "margin-top: 50px;">
-        <%= image_tag @post.user.get_profile_image(100,100),class:"mt-3 rounded-circle" %><br>
+        <%= link_to user_path(@post.user.id) do %>
+          <%= image_tag @post.user.get_profile_image(100,100),class:"mt-3 rounded-circle" %><br>
+        <% end %>
           <%= @post.user.name %><br>
           <%= @post.user.introduction %>
       </div>
