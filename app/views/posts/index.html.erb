@@ -15,7 +15,7 @@
           <thead>
             <tr>
               <th>name</th>
-
+              <th>city</th>
               <th>shop</th>
               <th>genre</th>
               <th>image</th>
@@ -26,6 +26,7 @@
             <% @posts.each do |posts| %>
               <tr>
                 <td><%= posts.user.name %></td>
+                <td><%= posts.city %></td>
                 <td><%= posts.shop %></td>
                 <td><%= posts.genre %></td>
                 <td>
