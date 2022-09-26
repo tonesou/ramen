@@ -8,6 +8,8 @@
         <%= form_with model: @post do |f| %>
           <h4>image</h4>
           <%= f.file_field :image %>
+          <h4>city</h4>
+           <%= f.text_field :city, rows: 5, class: "form-control" %>
           <h4>shop</h4>
           <%= f.text_field :shop, rows: 5, class: "form-control" %>
           <h4>explain</h4>
